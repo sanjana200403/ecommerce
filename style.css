@@ -1,0 +1,221 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Arvo:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ysabeau+Office:ital,wght@1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ysabeau+Office:wght@700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.sideBar{
+    background-color: rgb(208, 207, 207);
+    /* width: 140px; */
+    height: 100vh;
+    transition: transform  0.3s ease-in;
+    position: absolute;
+}
+.main{
+    /* background-color: aqua; */
+    width: 90vw;
+    margin: 30px;
+}
+.sideBar nav{
+    padding: 32px;
+}
+.sideBar nav li{
+    list-style: none;
+    font-size: 20px;
+    padding: 22px 0;
+}
+
+.sideBar nav li a{
+    text-decoration: none;
+    color: black;
+}
+.container{
+    display: flex;
+}
+/* info container  */
+.info_container{
+    /* background-color:pink; */
+    height: 58vh;
+    width: 70vw;
+    margin: 84px auto;
+    display: flex;
+    justify-content: space-around;
+}
+.devPic img{
+    height: 58vh;
+}
+.devInfo{
+    display: flex;
+    /* align-items: center; */
+    flex-direction: column;
+    justify-content:center ;
+}
+.hello{
+font-size: 80px;
+}
+.name{
+font-size: 50px;
+font-weight: bold;
+}
+.about{
+font-size: 20px;
+}
+.moreAbout{
+    margin-top:20px ;
+}
+.buttons button{
+    margin-top: 30px;
+    padding: 20px;
+    border-radius: 20px;
+    background-color: rgb(45, 45, 93);
+    color: wheat;
+    font-weight: bold;
+    font-size: 15px;
+cursor: pointer;
+
+}
+.buttons button:hover{
+    color:  rgb(45, 45, 93);
+    background-color: white;
+}
+/* ---------contact form----------------- */
+.contactForm{
+    padding: 0 34px;
+    padding-top:100px ;
+}
+.contactForm .mb-3{
+    padding: 10px 0;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    /* align-items: center; */
+
+}
+
+.contactForm .mb-3 input{
+    width: 50vw;
+    border-radius: 30px;
+    padding: 8px 0;
+    margin: 5px 0;
+}
+
+.contactForm h1{
+font-family: 'Arvo','sans-serif';
+/* text-align: center; */
+margin-bottom: 20px;
+}
+#emailHelp{
+    font-size: 12px;
+    color: midnightblue;
+    margin: 0 7px;
+}
+.checkbox{
+    width: 50px;
+}
+#checkboxText{
+    font-size: 15px;
+
+
+
+}
+.form-check{
+    margin-bottom: 10px
+}
+.btn{
+    margin-top: 30px;
+    padding: 20px 30px;
+    border-radius: 20px;
+    background-color: rgb(45, 45, 93);
+    color: wheat;
+    font-weight: bold;
+    font-size: 15px;
+cursor: pointer;
+font-family: 'Arvo','sans-serif';
+
+}
+.btn:hover{
+    color:  rgb(45, 45, 93);
+    background-color: white;
+}
+/* -----------blog---------------- */
+.blogItem{
+    margin: 20px 30px;
+}
+.blogItem p{
+    font-family: 'Ysabeau Office', sans-serif;
+   
+    margin-top: 20px;
+}
+.blogItem h2{
+    font-family: 'Arvo','sans-serif';
+    
+}
+.blogContainer h1{
+    text-align: center;
+    margin-bottom: 40px;
+}
+/* ------------intro-------------------------- */
+.intro h1{
+    font-family: 'Arvo','sans-serif';
+    margin: 20px;
+
+}
+.intro p{
+    font-family: 'Ysabeau Office', sans-serif;
+    margin: 20px;
+
+}
+.skillContainer{
+    padding: 20px;
+}
+.skill{
+    width: 30vw;
+    height: 10px;
+    background-color: red;
+    margin: 10px;
+}
+
+/* media query */
+@media (max-width: 1255px){
+   
+    /* body{
+        background-color: red;
+    } */
+    /* .sideBar{
+        transform: translate(-443px,0px);
+        position: absolute;
+    } */
+    .devPic{
+        display: none;
+    }
+    .contactForm h1{
+        font-size: 30px;
+        margin-right: 10px;
+    }
+    .contactForm .mb-3 input{
+        width: 60vw;
+        border-radius: 30px;
+        padding: 5px 0;
+        margin: 0;
+    }
+    .hello{
+        font-size: 0px;
+        margin-top: 30px;
+        }
+}
+.hamburger{
+    position: absolute;
+    cursor: pointer;
+    left: 20px;
+    top: 10px;
+}
+.sideBarGo{
+    transform: translate(-443px,0px);
+    position: absolute;
+}
+.cross{
+    margin-left: 69px;
+}
